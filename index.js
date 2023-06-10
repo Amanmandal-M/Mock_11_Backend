@@ -22,7 +22,7 @@ app.use(cors());
 
 // Default endpoint
 app.get('/', (req, res)=>{
-    res.status(200).send(`<h1 style="text-align:center;color:blue;">Welcome to Social Media App Backend</h1>`)
+    res.status(200).send(`<h1 style="text-align:center;color:blue;">Welcome to Plan my Trip Backend App</h1>`)
 });
 
 
