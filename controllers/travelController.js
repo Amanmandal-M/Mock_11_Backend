@@ -87,7 +87,7 @@ const editTravelData = async (req,res) => {
     const Id = req.params.id
     const payload = req.body;
     try {
-        const data = await travelModel.findByIdandUpdate({_id:Id}, payload);
+        const data = await travelModel.findByIdAndUpdate({_id:Id}, payload);
         return res.status(204).json("Data Updated Successfully");
     } catch (error) {
         console.log(error.message);
@@ -102,7 +102,7 @@ const editTravelData = async (req,res) => {
 const deleteTravelData = async (req,res) => {
     const Id = req.params.id
     try {
-        const data = await travelModel.findByIdandDelete({_id:Id});
+        const data = await travelModel.findByIdAndDelete({_id:Id});
         return res.status(202).json("Data Deleted Successfully");
     } catch (error) {
         console.log(error.message);
@@ -111,7 +111,6 @@ const deleteTravelData = async (req,res) => {
         })
     }
 };
-
 
 
 
