@@ -15,7 +15,6 @@ const { travelRouter } = require('./routes/travelRoute');
 
 // Middlewares
 app.use(express.json());
-app.use(cookieParser());
 app.use(cors());
 
 
